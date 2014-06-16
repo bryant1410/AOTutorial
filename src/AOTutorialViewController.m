@@ -116,19 +116,33 @@ CGSize ACMStringSize(NSString *string, CGSize size, NSDictionary *attributes)
 
 - (instancetype)initWithBackgroundImages:(NSArray *)images andInformations:(NSArray *)informations
 {
-    self = [self initWithNibName:@"AOTutorialViewController" bundle:nil];
-    if (self)
+    if (self = [self init])
     {
+        _index = 0;
+        _buttons = AOTutorialButtonNone;
+        
         self.backgroundImages = [NSMutableArray arrayWithArray:images];
         self.informationLabels = [NSMutableArray arrayWithArray:informations];
     }
     return self;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithCoder:(NSCoder *)coder
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self)
+    if (self = [super initWithCoder:coder])
+    {
+        _index = 0;
+        _buttons = AOTutorialButtonNone;
+        
+        self.backgroundImages = [NSMutableArray array];
+        self.informationLabels = [NSMutableArray array];
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
     {
         _index = 0;
         _buttons = AOTutorialButtonNone;
