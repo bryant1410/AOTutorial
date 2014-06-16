@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AOTutorial"
-  s.version      = "1.5"
+  s.version      = "1.6"
   s.summary      = "A tutorial component with fade in / fade out animation for background images"
 
   s.description  = <<-DESC
