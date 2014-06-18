@@ -116,7 +116,7 @@ CGSize ACMStringSize(NSString *string, CGSize size, NSDictionary *attributes)
 
 - (instancetype)initWithBackgroundImages:(NSArray *)images andInformations:(NSArray *)informations
 {
-    if (self = [self init])
+    if (self = [super initWithNibName:@"AOTutorialViewController" bundle:nil])
     {
         _index = 0;
         _buttons = AOTutorialButtonNone;
