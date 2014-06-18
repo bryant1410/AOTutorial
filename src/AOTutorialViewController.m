@@ -121,8 +121,7 @@ CGSize ACMStringSize(NSString *string, CGSize size, NSDictionary *attributes)
         _index = 0;
         _buttons = AOTutorialButtonNone;
         
-        self.backgroundImages = [NSMutableArray arrayWithArray:images];
-        self.informationLabels = [NSMutableArray arrayWithArray:informations];
+        [self loadBackgroundImages:images andInformations:informations];
     }
     return self;
 }
