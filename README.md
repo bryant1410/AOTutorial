@@ -1,24 +1,24 @@
-#AOTutorial - Out of the box tutorial application
+# AOTutorial - Out of the box tutorial application
 
 AOTutorial is under MIT Licence so if you find it helpful just use it !
 
-###**AOTutorialDemo**
+### **AOTutorialDemo**
 
 This project help create an application tutorial to show users the application's guidelines. The fade in / fade out effect animation applied to the background image is based on scrollview content offset.
 
-###**Screenshot:**
+### **Screenshot:**
 AOTutorialDemo in the iphone simulator
 
 ![ScreenShot](http://public.appsido.com/iPhone/public/AOTutorial/AOTutorialScreen_1.0.png)
 
-###**Video:**
+### **Video:**
 http://public.appsido.com/iPhone/public/AOTutorial/AOTutorial.mp4
 
-##How To Use It
+## How To Use It
 
 Sample project show a simple usage.
 
-###Documentation
+### Documentation
 
 ```objc
 
@@ -63,7 +63,7 @@ Sample project show a simple usage.
 
 ```
 
-###Code snippet
+### Code snippet
 
 ```objc
 // First create a new view controller class that inherit from AOTutorialViewController class. Do not forget to import the AOTutorialViewController interface
